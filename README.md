@@ -1,5 +1,7 @@
 # Sidekiq::Oj
 
+[![Build Status](https://travis-ci.org/positionly/sidekiq-oj.svg?branch=master)](https://travis-ci.org/positionly/sidekiq-oj)
+
 Put [oj](https://github.com/ohler55/oj) in your [sidekiq](https://github.com/mperham/sidekiq) for some speed! If you're running Sidekiq at big scale this should save you some precious resources.
 
 _Not yet production battle tested! No official release!_
