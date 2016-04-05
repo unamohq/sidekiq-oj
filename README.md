@@ -4,8 +4,6 @@
 
 Put [oj](https://github.com/ohler55/oj) in your [sidekiq](https://github.com/mperham/sidekiq) for some speed! If you're running Sidekiq at big scale this should save you some precious resources.
 
-_Not yet production battle tested! No official release!_
-
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -24,7 +22,7 @@ Or install it yourself as:
 
 ## Usage
 
-`sidekiq-oj` requires `sidekiq` for you, if you are using bundler remember to add it _after_ `sidekiq` as it overrides two methods in `Sidekiq` module.
+`sidekiq-oj` requires `sidekiq` for you and it overrides two methods in `Sidekiq` module.
 
 ## Silly benchmarks
 
