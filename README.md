@@ -1,6 +1,8 @@
 # Sidekiq::Oj
 
 [![Build Status](https://travis-ci.org/positionly/sidekiq-oj.svg?branch=master)](https://travis-ci.org/positionly/sidekiq-oj)
+[![Dependency Status](https://gemnasium.com/positionly/sidekiq-oj.png)](https://gemnasium.com/positionly/sidekiq-oj)
+[![Gem Version](https://badge.fury.io/rb/sidekiq-oj.png)](http://badge.fury.io/rb/sidekiq-oj)
 
 Put [oj](https://github.com/ohler55/oj) in your [sidekiq](https://github.com/mperham/sidekiq) for some speed! If you're running Sidekiq at big scale this should save you some precious resources.
 
