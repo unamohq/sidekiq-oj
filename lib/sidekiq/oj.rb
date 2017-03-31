@@ -4,7 +4,7 @@ require "sidekiq"
 
 module Sidekiq
   def self.load_json(string)
-    ::Oj.load(string)
+    ::Oj.strict_load(string)
   end
 
   def self.dump_json(object)

@@ -4,7 +4,7 @@ describe Sidekiq::Oj do
   describe 'load_json' do
     it 'uses Oj' do
       string = "{\"hi\":\"there\"}"
-      expect(Oj).to receive(:load).with(string)
+      expect(Oj).to receive(:strict_load).with(string)
       Sidekiq.load_json(string)
     end
 
@@ -13,6 +13,11 @@ describe Sidekiq::Oj do
 
       expect(Sidekiq.load_json(string)).to eq JSON.parse(string)
       expect(Sidekiq.load_json(string)).to be_a(Hash)
+    end
+
+    it 'strictly loads string' do
+      string = JSON.dump(":testme")
+      expect(Sidekiq.load_json(string)).to eq(':testme')
     end
   end
 
